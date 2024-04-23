@@ -6,6 +6,9 @@ import com.designpattern.creational.factory.options.ComputerType;
 import com.designpattern.creational.factory.type.Computer;
 
 public class ComputerClient {
+        public ComputerClient() {
+        }
+
         public static void main(String[] args) {
                 /*Without Factory, the problem is if we change constructor of laptop.
                  * we have to change it all places. and it is very tightly coupled.
