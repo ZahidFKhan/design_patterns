@@ -5,6 +5,7 @@ public class Main {
     Student student = new Student(12, 12000, "Zahid");
     Student student1 = (Student) student.clone();
     System.out.println(student.equals(student1));
+    System.out.println(student == student1);
   }
 }
 
