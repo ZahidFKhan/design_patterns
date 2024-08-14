@@ -1,4 +1,4 @@
-package com.designpattern.creational.abstract_factory;
+package com.designpattern.creational.abstract_factory.items.switches;
 
 public class SamsungSwitch implements Switch {
   @Override
