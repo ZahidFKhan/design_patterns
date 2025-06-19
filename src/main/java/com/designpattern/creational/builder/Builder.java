@@ -1,6 +1,7 @@
 package com.designpattern.creational.builder;
 
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 public class Builder {
@@ -33,20 +34,13 @@ class Car {
                 return " " + name + " " + model;
         }
 
+        @Getter
         @NoArgsConstructor
-        static class Builder {
+        public static class Builder {
                 private int model;
                 private String name;
 
-                public int getModel() {
-                        return model;
-                }
-
-                public String getName() {
-                        return name;
-                }
-
-                public Builder model(int model) {
+            public Builder model(int model) {
                         this.model = model;
                         return this;
                 }
@@ -57,8 +51,7 @@ class Car {
                 }
 
                 public Car build() {
-                        Car car = new Car(this);
-                        return car;
+                    return new Car(this);
                 }
         }
 }
