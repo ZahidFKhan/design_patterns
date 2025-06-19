@@ -9,6 +9,6 @@ record Student(int id, long salary, String name) implements Cloneable {
   // 2nd WAY not recommended
   @Override
   protected Object clone() throws CloneNotSupportedException {
-    return new Student(id(), salary(), name());
+    return super.clone();
   }
 }
