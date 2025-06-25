@@ -10,13 +10,19 @@
 1. When the no. of algorithm are very small say 2.
 
 #Visitor Pattern
-The Visitor pattern is a behavioral design pattern that allows you to separate an algorithm from the objects on which it operates. 
+The Visitor pattern is a behavioral design pattern that allows you to separate an algorithm from the objects on which it
+operates.
 This means you can add new operations to existing object structures without modifying the structures themselves.
 
 EXAMPLE:
- 
-You have keyboard mouse, cpu etc. Something went wrong, now there are many periphicals that 
+
+You have keyboard mouse, cpu etc. Something went wrong, now there are many periphicals that
 could go wrong.
 
 We can add visitor of each peripherical in the Visitor and that will help us diagonalise the issue
 
+# State Pattern
+
+- Disadvantage: Adds more classes into the package.
+ - WHEN TO USE:  Use the pattern when you have a class polluted with massive conditionals that alter how the class behaves
+according to the current values of the class’s fields.
