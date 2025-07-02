@@ -34,3 +34,9 @@ that are immutable and responsible for changing the states in the mutable contex
 # Observer
 
 Publisher and subscriber where we have 1:M relationship.
+
+# Command
+Command pattern is basically used for the separation of concerns in a large codebase. For example:
+if we have a GUI based application, we can save the file using shortcut, key binding, menu or some other way.
+
+So, this will grow in future. Such situations can be resolved using command pattern.
