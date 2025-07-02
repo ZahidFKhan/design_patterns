@@ -33,7 +33,7 @@ that are immutable and responsible for changing the states in the mutable contex
 
 # Observer
 
-Publisher and subscriber where we have 1:M relationship.
+Publisher and subscriber where we have 1:M relationship. They can dynamically add or remove clients.
 
 # Command
 Command pattern is basically used for the separation of concerns in a large codebase. For example:
