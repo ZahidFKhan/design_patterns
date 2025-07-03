@@ -2,6 +2,9 @@ package com.design_patterns.behavioural.command;
 
 import lombok.Setter;
 
+/**
+* Consumer of the command.
+* */
 @Setter
 public class VimEditMenuOptions {
   private Command copyCommand;

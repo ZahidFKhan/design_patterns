@@ -2,6 +2,9 @@ package com.design_patterns.behavioural.command;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ *  Producer of the event.
+ * */
 @Slf4j
 public class VimEditor {
   private StringBuilder text = new StringBuilder();
@@ -12,7 +15,7 @@ public class VimEditor {
       log.info("Nothing to be copied.");
     }
     clipboard.append(text);
-    log.info("Copied {} to the textboard.\n TEXTBOX : {}\n CLIPBOARD: {}", text, text,clipboard);
+    log.info("Copied {} to the textboard.\n TEXTBOX : {}\n CLIPBOARD: {}", text, text, clipboard);
   }
 
   public void cut() {
@@ -21,7 +24,7 @@ public class VimEditor {
     }
     clipboard.append(text);
     text = new StringBuilder();
-    log.info("Cut {} from the textboard.\n TEXTBOX : {}\n CLIPBOARD: {}", text, text,clipboard);
+    log.info("Cut {} from the textboard.\n TEXTBOX : {}\n CLIPBOARD: {}", text, text, clipboard);
   }
 
   public void paste() {
@@ -29,7 +32,7 @@ public class VimEditor {
       log.info("Nothing to be pasted.");
     }
     text.append(clipboard);
-    log.info("Paste into {} the textboard.\n TEXTBOX : {}\n CLIPBOARD: {}", text, text,clipboard);
+    log.info("Paste into {} the textboard.\n TEXTBOX : {}\n CLIPBOARD: {}", text, text, clipboard);
   }
 
   public void addText(final String value) {
